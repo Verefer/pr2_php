@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета пользователя</title>
+</head>
+<body>
+    <h2>Анкета пользователя</h2>
+    <form action="process_survey.php" method="post">
+        <label for="name">Имя:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="dob">Дата рождения:</label><br>
+        <input type="date" id="dob" name="dob" required><br>
+        <label for="programming_languages">Языки программирования, которые знаете:</label><br>
+        <input type="text" id="programming_languages" name="programming_languages"><br>
+        <label for="experience">Опыт работы (в годах):</label><br>
+        <input type="number" id="experience" name="experience"><br>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отправка электронного письма</title>
+</head>
+<body>
+    <h2>Форма отправки электронного письма</h2>
+    <form action="send_email.php" method="post">
+        <label for="to">Кому:</label><br>
+        <input type="email" id="to" name="to" required><br>
+        <label for="subject">Тема:</label><br>
+        <input type="text" id="subject" name="subject" required><br>
+        <label for="message">Сообщение:</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+        <input type="submit" name="mail_ok" value="Отправить">
+    </form>
+</body>
+</html>
